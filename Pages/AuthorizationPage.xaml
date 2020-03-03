@@ -13,7 +13,7 @@
         <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Height="30" Margin="325,343,0,0" VerticalAlignment="Top" Width="350" FontSize="20"/>
         <Label Content="Ваш Логин" HorizontalAlignment="Left" Margin="325,213,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="325,306,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold"/>
-        <Button x:Name="logIn" Content="LogIn" HorizontalAlignment="Left" Margin="450,510,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20"/>
+        <Button x:Name="logIn" Content="LogIn" HorizontalAlignment="Left" Margin="450,510,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="logIn_Click"/>
 
     </Grid>
 </Page>

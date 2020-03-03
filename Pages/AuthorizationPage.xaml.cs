@@ -24,5 +24,39 @@ namespace FurnitureDataBase_WS
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Войти в учетную запись
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void logIn_Click(object sender, RoutedEventArgs e)
+        {
+            if (Authorisation.LogIn(LoginBox.Text, PasswordBox.Password))
+            {
+                switch (Data.Role)
+                {
+                    case "Заказчик":
+                        this.NavigationService.Navigate(new CustomerPage());
+                        break;
+
+                    case "Мастер":
+                        this.NavigationService.Navigate(new MasterPage());
+                        break;
+
+                    case "Директор":
+                        this.NavigationService.Navigate(new DirectorPage());
+                        break;
+
+                    case "Менеджер":
+                        this.NavigationService.Navigate(new ManagerPage());
+                        break;
+
+                    case "Заместитель директора":
+                        this.NavigationService.Navigate(new AssociateDirectorPage());
+                        break;
+                }
+            }
+        }
     }
 }

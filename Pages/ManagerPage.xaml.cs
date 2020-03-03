@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FurnitureDataBase_WS.Pages
+namespace FurnitureDataBase_WS
 {
     /// <summary>
     /// Логика взаимодействия для ManagerPage.xaml
