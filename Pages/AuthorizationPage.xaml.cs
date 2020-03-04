@@ -35,7 +35,7 @@ namespace FurnitureDataBase_WS
         {
             LoginBox.BorderBrush = Brushes.LightGray;
             PasswordBox.BorderBrush = Brushes.LightGray;
-            CaptchaText.BorderBrush = Brushes.LightGray;
+            CaptchaText.BorderBrush = Brushes.LightGray;            
 
             if (Authorisation.LogIn(LoginBox.Text, PasswordBox.Password))
             {
@@ -81,6 +81,7 @@ namespace FurnitureDataBase_WS
                 LoginBox.BorderBrush = Brushes.Red;
                 PasswordBox.BorderBrush = Brushes.Red;
             }
+            Captcha.Content = Authorisation.CaptchaBuilder();
         }        
     }
 
