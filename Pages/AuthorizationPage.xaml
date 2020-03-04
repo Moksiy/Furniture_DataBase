@@ -14,6 +14,18 @@
         <Label Content="Ваш Логин" HorizontalAlignment="Left" Margin="325,213,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="325,306,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold"/>
         <Button x:Name="logIn" Content="LogIn" HorizontalAlignment="Left" Margin="450,510,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="logIn_Click"/>
+        <Label x:Name="Captcha" Content="XYSU" HorizontalAlignment="Left" Margin="325,403,0,0" VerticalAlignment="Top" Height="50" Width="130" BorderBrush="#FF2650FF" Foreground="#FF0003FF" FontSize="37" HorizontalContentAlignment="Center" FontFamily="Monotype Corsiva">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF01498E" Offset="1"/>
+                    <GradientStop Color="#FFA0D1FF"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="CaptchaText" HorizontalAlignment="Left" Height="50" Margin="526,403,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149" FontSize="33" MaxLength="4" HorizontalContentAlignment="Center"/>
 
     </Grid>
+
 </Page>
+    
