@@ -37,7 +37,6 @@ namespace FurnitureDataBase_WS
 
         /// <summary>
         /// Зарегистрироваться
-        /// 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
