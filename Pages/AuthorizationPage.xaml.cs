@@ -94,6 +94,11 @@ namespace FurnitureDataBase_WS
             this.NavigationService.Navigate(new RegistrationPage());
         }
 
+        /// <summary>
+        /// Обновляем капчу
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Refresh_Click(object sender, RoutedEventArgs e)
         {
             Captcha.Content = Authorisation.CaptchaBuilder();
