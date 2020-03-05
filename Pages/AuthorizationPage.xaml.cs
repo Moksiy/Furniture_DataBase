@@ -82,7 +82,22 @@ namespace FurnitureDataBase_WS
                 PasswordBox.BorderBrush = Brushes.Red;
             }
             Captcha.Content = Authorisation.CaptchaBuilder();
-        }        
+        }
+
+        /// <summary>
+        /// Регистрация
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Registration_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new RegistrationPage());
+        }
+
+        private void Refresh_Click(object sender, RoutedEventArgs e)
+        {
+            Captcha.Content = Authorisation.CaptchaBuilder();
+        }
     }
 
     public static class Messages

@@ -24,5 +24,10 @@ namespace FurnitureDataBase_WS
         {
             InitializeComponent();
         }
+
+        private void logIn_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AuthorizationPage());
+        }
     }
 }

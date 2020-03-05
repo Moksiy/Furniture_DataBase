@@ -24,6 +24,8 @@
             </Label.Background>
         </Label>
         <TextBox x:Name="CaptchaText" HorizontalAlignment="Left" Height="50" Margin="526,403,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149" FontSize="33" MaxLength="4" HorizontalContentAlignment="Center"/>
+        <Button x:Name="Registration" Content="Регистрация" HorizontalAlignment="Left" Margin="430,611,0,0" VerticalAlignment="Top" Width="140" Height="30" FontSize="20" Click="Registration_Click"/>
+        <Button x:Name="Refresh" Content="?!" HorizontalAlignment="Left" Margin="474,414,0,0" VerticalAlignment="Top" Width="29" Height="30" FontSize="20" Click="Refresh_Click"/>
 
     </Grid>
 
