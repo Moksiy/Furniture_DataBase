@@ -25,9 +25,24 @@ namespace FurnitureDataBase_WS
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Окно входа в учетную запись
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void logIn_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new AuthorizationPage());
+        }
+
+        /// <summary>
+        /// Зарегистрироваться
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Registration_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
