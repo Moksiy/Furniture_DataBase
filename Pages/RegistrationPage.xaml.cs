@@ -90,17 +90,17 @@ namespace FurnitureDataBase_WS
 
             string error = PasswordCheck.passwordCheck(Password.Password, Password2.Password);
 
-            if (error == "" && !isEmpt)
+            if (String.IsNullOrEmpty(error) && !isEmpt)
             {
                 //регистрируем
                 string errorText = RegUser.RegistrationUser(Login.Text, Password.Password, LastName.Text, FirstName.Text, Patronum.Text);
 
                 //ВЫводим текст ошибки если она есть
-                if (errorText != "")
+                if (!String.IsNullOrEmpty(errorText))
                     MessageBox.Show(errorText);
                 //Если ошибок нет, то переходим на страницу юзера
-                //else
-                    //this.NavigationService.Navigate();
+                else
+                    this.NavigationService.Navigate(new CustomerPage());
             }
             else
             {
@@ -118,7 +118,9 @@ namespace FurnitureDataBase_WS
         /// <param name="e"></param>
         private void ChooseImage_Click(object sender, RoutedEventArgs e)
         {
-            
+            DialogWindow.OpenFileDialog();
+            if(DialogWindow.FilePath != null)
+                this.UserImage.Source = new BitmapImage(new Uri(DialogWindow.FilePath, UriKind.Relative)) { CreateOptions = BitmapCreateOptions.IgnoreImageCache };
         }
     }
 }

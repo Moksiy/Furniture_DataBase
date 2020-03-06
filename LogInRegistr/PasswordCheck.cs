@@ -43,7 +43,7 @@ namespace FurnitureDataBase_WS
                 error+= "Пароль должен содержать не более 18 символов\n";
 
             //Проверка на содержание в пароле спец символов
-            if (!pass1.Contains("*") || !pass1.Contains("&") || !pass1.Contains("{") || !pass1.Contains("}") || !pass1.Contains("|") || pass1.Contains("+"))
+            if (!pass1.Contains("*") && !pass1.Contains("&") && !pass1.Contains("{") && !pass1.Contains("}") && !pass1.Contains("|") && !pass1.Contains("+"))
                 error+= "Пароль должен содержать минимум 1 символ из набора: * & { } | +\n";
 
             //Проверка на содержание цифр

@@ -8,7 +8,7 @@ using System.Windows;
 
 namespace FurnitureDataBase_WS
 {
-    public static class DefaultDialogService
+    public static class DialogWindow
     {
         public static string FilePath { get; set; }
 
