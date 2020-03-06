@@ -23,6 +23,7 @@ namespace FurnitureDataBase_WS
         public RegistrationPage()
         {
             InitializeComponent();
+            UserImage.Source = new BitmapImage(new Uri("/Image/defImage.jpg", UriKind.Relative)) { CreateOptions = BitmapCreateOptions.IgnoreImageCache };
         }
 
         /// <summary>
@@ -42,7 +43,82 @@ namespace FurnitureDataBase_WS
         /// <param name="e"></param>
         private void Registration_Click(object sender, RoutedEventArgs e)
         {
+            bool isEmpt = default;
 
+            if (Login.Text == "")
+            {
+                Login.BorderBrush = Brushes.Red;
+                isEmpt = true;
+            }
+            else
+                Login.BorderBrush = Brushes.LightGray;
+            if (Password.Password == "")
+            {
+                Password.BorderBrush = Brushes.Red;
+                isEmpt = true;
+            }
+            else
+                Password.BorderBrush = Brushes.LightGray;
+            if (Password2.Password == "")
+            {
+                Password2.BorderBrush = Brushes.Red;
+                isEmpt = true;
+            }
+            else
+                Password2.BorderBrush = Brushes.LightGray;
+            if (LastName.Text == "")
+            {
+                LastName.BorderBrush = Brushes.Red;
+                isEmpt = true;
+            }
+            else
+                LastName.BorderBrush = Brushes.LightGray;
+            if (FirstName.Text == "")
+            {
+                FirstName.BorderBrush = Brushes.Red;
+                isEmpt = true;
+            }
+            else
+                FirstName.BorderBrush = Brushes.LightGray;
+            if (Patronum.Text == "")
+            {
+                Patronum.BorderBrush = Brushes.Red;
+                isEmpt = true;
+            }
+            else
+                Patronum.BorderBrush = Brushes.LightGray;
+
+            string error = PasswordCheck.passwordCheck(Password.Password, Password2.Password);
+
+            if (error == "" && !isEmpt)
+            {
+                //регистрируем
+                string errorText = RegUser.RegistrationUser(Login.Text, Password.Password, LastName.Text, FirstName.Text, Patronum.Text);
+
+                //ВЫводим текст ошибки если она есть
+                if (errorText != "")
+                    MessageBox.Show(errorText);
+                //Если ошибок нет, то переходим на страницу юзера
+                //else
+                    //this.NavigationService.Navigate();
+            }
+            else
+            {
+                //Выводим текст ошибки
+                MessageBox.Show(error);
+            }
+
+            isEmpt = false;
+        }
+
+        /// <summary>
+        /// Выбор фото
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ChooseImage_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

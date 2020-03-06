@@ -11,8 +11,8 @@
     <Grid>
         <Button x:Name="logIn" Content="LogIn" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="logIn_Click"/>
         <TextBox x:Name="Login" HorizontalAlignment="Left" Height="30" Margin="325,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontSize="20" />
-        <TextBox x:Name="Password" HorizontalAlignment="Left" Height="30" Margin="325,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontSize="20" />
-        <TextBox x:Name="Password2" HorizontalAlignment="Left" Height="30" Margin="325,247,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontSize="20" />
+        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Height="30" Margin="325,180,0,0" VerticalAlignment="Top" Width="350" FontSize="20" />
+        <PasswordBox x:Name="Password2" HorizontalAlignment="Left" Height="30" Margin="325,247,0,0" VerticalAlignment="Top" Width="350" FontSize="20" />
         <TextBox x:Name="LastName" HorizontalAlignment="Left" Height="30" Margin="325,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontSize="20" />
         <TextBox x:Name="FirstName" HorizontalAlignment="Left" Height="30" Margin="325,381,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontSize="20" />
         <TextBox x:Name="Patronum" HorizontalAlignment="Left" Height="30" Margin="325,448,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontSize="20" />
@@ -23,6 +23,8 @@
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="325,277,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="325,344,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold"/>
         <Label Content="Отчество" HorizontalAlignment="Left" Margin="325,411,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold"/>
+        <Image x:Name="UserImage" HorizontalAlignment="Left" Height="171" Margin="768,210,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="ChooseImage" Content="Загрузить" HorizontalAlignment="Left" Margin="784,387,0,0" VerticalAlignment="Top" Width="140" Height="30" FontSize="20" Click="ChooseImage_Click"/>
 
     </Grid>
 </Page>
