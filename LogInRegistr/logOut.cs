@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FurnitureDataBase_WS
 {
-    public static class logOut
+    public static class logOutUser
     {
-        public static void logoutUser()
+        public static void logout()
         {
             Data.LastName = "";
             Data.Login = "";

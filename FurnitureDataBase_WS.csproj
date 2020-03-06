@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Director\Accounting.cs" />
     <Compile Include="DialogWindow\DialogWindow.cs" />
     <Compile Include="LogInRegistr\logOut.cs" />
     <Compile Include="Pages\ManagerPage.xaml.cs">
@@ -150,7 +151,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="AssociateDirector\" />
+    <Folder Include="Customer\" />
+    <Folder Include="Manager\" />
+    <Folder Include="Master\" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Image\defImage.jpg" />
   </ItemGroup>
