@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Director\DirectorCollection.cs" />
     <Compile Include="Director\Accounting.cs" />
     <Compile Include="DialogWindow\DialogWindow.cs" />
     <Compile Include="LogInRegistr\logOut.cs" />
