@@ -10,6 +10,13 @@
 
     <Grid>
         <Button x:Name="logOut" Content="LogOut" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="logOut_Click"/>
- 
+        <ListView HorizontalAlignment="Left" Height="420" Margin="32,60,0,0" VerticalAlignment="Top" Width="934">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
     </Grid>
 </Page>

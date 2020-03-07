@@ -44,5 +44,48 @@ namespace FurnitureDataBase_WS
             }
             return error;
         }
+
+        /// <summary>
+        /// Проверка на существавание логина 
+        /// </summary>
+        /// <param name="login"></param>
+        /// <returns></returns>
+        public static bool IsContains(string login)
+        {
+            SqlConnection connection = new SqlConnection();
+
+            bool isContain = default;
+
+            try
+            {                
+                connection.ConnectionString = MainWindow.ConnectionSrting;
+
+                //Открываем подключение
+                connection.Open();
+
+                SqlCommand command = new SqlCommand();
+
+                //Запрос
+                command.CommandText = "SELECT * FROM [Users] WHERE Login = '" + login + "'";
+
+                command.Connection = connection;
+
+                SqlDataReader dataReader = command.ExecuteReader();
+
+                if (dataReader.FieldCount > 0)
+                    isContain = true;
+            }
+            catch (SqlException ex)
+            {
+
+            }
+            finally
+            {
+                //В любом случае закрываем подключение
+                connection.Close();
+            }
+
+            return isContain;
+        }
     }
 }
