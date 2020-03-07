@@ -88,7 +88,15 @@ namespace FurnitureDataBase_WS
             else
                 Patronum.BorderBrush = Brushes.LightGray;
 
-            string error = PasswordCheck.passwordCheck(Password.Password, Password2.Password);
+            string error = default;
+
+            if (RegUser.IsContains(Login.Text))
+            {
+                error += "Пользователь с таким логином уже зарегистрирован\n";
+                Login.BorderBrush = Brushes.Red;
+            }
+
+            error += PasswordCheck.passwordCheck(Password.Password, Password2.Password);
 
             if (String.IsNullOrEmpty(error) && !isEmpt)
             {

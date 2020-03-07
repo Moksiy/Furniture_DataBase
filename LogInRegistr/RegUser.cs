@@ -72,7 +72,14 @@ namespace FurnitureDataBase_WS
 
                 SqlDataReader dataReader = command.ExecuteReader();
 
-                if (dataReader.FieldCount > 0)
+                string loginCheck = default;
+
+                while (dataReader.Read())
+                {
+                    loginCheck = dataReader[0].ToString();
+                }
+
+                if (!String.IsNullOrEmpty(loginCheck))
                     isContain = true;
             }
             catch (SqlException ex)
