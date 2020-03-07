@@ -33,6 +33,8 @@ namespace FurnitureDataBase_WS
         private void logOut_Click(object sender, RoutedEventArgs e)
         {
             logOutUser.logout();
+
+            //Переход на страницу авторизации
             this.NavigationService.Navigate(new AuthorizationPage());
         }
 
