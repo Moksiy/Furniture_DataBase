@@ -58,6 +58,7 @@
     <Compile Include="Director\DirectorCollection.cs" />
     <Compile Include="Director\Accounting.cs" />
     <Compile Include="DialogWindow\DialogWindow.cs" />
+    <Compile Include="Director\GetEquipment.cs" />
     <Compile Include="LogInRegistr\logOut.cs" />
     <Compile Include="Pages\ManagerPage.xaml.cs">
       <DependentUpon>ManagerPage.xaml</DependentUpon>
