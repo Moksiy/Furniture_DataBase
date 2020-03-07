@@ -77,7 +77,7 @@ namespace FurnitureDataBase_WS
             }
             catch (SqlException ex)
             {
-
+                //ERROR
             }
             finally
             {
