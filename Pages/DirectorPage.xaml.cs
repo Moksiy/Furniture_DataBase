@@ -40,6 +40,9 @@ namespace FurnitureDataBase_WS
             this.NavigationService.Navigate(new AuthorizationPage());
         }
 
-
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AddNewFurn());
+        }
     }
 }

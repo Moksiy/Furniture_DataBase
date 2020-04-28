@@ -22,7 +22,7 @@ namespace FurnitureDataBase_WS
     public partial class MainWindow : Window
     {
         //===========================   Строка подключения БД   =================================
-        public static string ConnectionSrting { get; } = @"Data Source=DESKTOP-O3K2SO6\SQLEXPRESS;Initial Catalog=Furniture_order;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public static string ConnectionSrting { get; } = @"Data Source=DESKTOP-O70G8S5;Initial Catalog=Furniture_order;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         //=======================================================================================
 
         public MainWindow()
