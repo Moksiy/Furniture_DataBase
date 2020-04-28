@@ -10,10 +10,12 @@
 
     <Grid>
         <Button x:Name="logOut" Content="LogOut" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="logOut_Click"/>
-        <ListView HorizontalAlignment="Left" Height="588" Margin="32,60,0,0" VerticalAlignment="Top" Width="934">
+        <ListView x:Name="LIST" HorizontalAlignment="Left" Height="588" Margin="32,60,0,0" VerticalAlignment="Top" Width="934">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+                    <GridViewColumn Header="Маркировка" Width="230" DisplayMemberBinding="{Binding Mark}"/>
+                    <GridViewColumn Header="Тип оборудования" Width="230" DisplayMemberBinding="{Binding Type}"/>
+                    <GridViewColumn Header="Характеристики" Width="465" DisplayMemberBinding="{Binding Charact}"/>
                 </GridView>
             </ListView.View>
         </ListView>

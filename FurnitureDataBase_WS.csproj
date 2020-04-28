@@ -68,6 +68,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddFurniture\CharactElement.cs" />
+    <Compile Include="AddFurniture\Collection.cs" />
+    <Compile Include="AddFurniture\FurnitureElement.cs" />
     <Compile Include="Pages\AddNewFurn.xaml.cs">
       <DependentUpon>AddNewFurn.xaml</DependentUpon>
     </Compile>

@@ -10,11 +10,28 @@
 
     <Grid>
         <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="Back_Click"/>
-        <TextBox HorizontalAlignment="Center" Height="26" Margin="0,63,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="296" FontSize="18"/>
-        <TextBox HorizontalAlignment="Center" Height="26" Margin="0,127,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="296" FontSize="18"/>
-        <ComboBox HorizontalAlignment="Center" FontSize="18" Margin="0,193,0,0" VerticalAlignment="Top" Width="296" Height="26"/>
-        <TextBox HorizontalAlignment="Left" FontSize="18" Height="26" Margin="240,253,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="219"/>
-        <TextBox HorizontalAlignment="Left" FontSize="18" Height="26" Margin="531,253,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="219"/>
+        <TextBox x:Name="Mark" HorizontalAlignment="Center" Height="26" Margin="0,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="296" FontSize="18"/>
+        <TextBox x:Name="NameF" HorizontalAlignment="Center" Height="26" Margin="0,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="296" FontSize="18"/>
+        <ComboBox x:Name="TypeF" HorizontalAlignment="Center" FontSize="18" Margin="0,193,0,0" VerticalAlignment="Top" Width="296" Height="26"/>
+        <TextBox x:Name="CharactName" HorizontalAlignment="Left" FontSize="18" Height="26" Margin="263,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="219"/>
+        <TextBox x:Name="Charact" HorizontalAlignment="Left" FontSize="18" Height="26" Margin="505,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="219"/>
+        <Label Content="Маркировка" HorizontalAlignment="Left" Margin="349,37,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label Content="Наименование" HorizontalAlignment="Left" Margin="349,101,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label Content="Тип оборудования" HorizontalAlignment="Left" Margin="349,167,0,0" VerticalAlignment="Top" Width="118"/>
+        <Label Content=":" HorizontalAlignment="Left" Margin="487,248,0,0" FontSize="18" VerticalAlignment="Top" Width="18"/>
+        <Button x:Name="Add" Content="+" HorizontalAlignment="Left" Margin="748,253,0,0" VerticalAlignment="Top" Width="32" Height="26" FontSize="18" Click="Add_Click"/>
+        <ListView x:Name="CharactList" HorizontalAlignment="Left" Height="247" Margin="263,397,0,0" VerticalAlignment="Top" Width="461">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="450">Характеристики</GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="AddFurn" Content="Добавить" HorizontalAlignment="Left" Margin="445,328,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Click="AddFurn_Click"/>
+        <Label Content="Название характеристики" HorizontalAlignment="Left" Margin="263,227,0,0" VerticalAlignment="Top" Width="162"/>
+        <Label Content="Характеристика" HorizontalAlignment="Left" Margin="505,227,0,0" VerticalAlignment="Top" Width="162"/>
+        <Label x:Name="CharactError" Content="" Foreground ="Red"  HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="359,371,0,0" VerticalAlignment="Top" Width="261"/>
+        <Label x:Name="TypeError" Content="" Foreground ="Red"  HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="367,153,0,0" VerticalAlignment="Top" Width="261"/>
 
     </Grid>
 </Page>
